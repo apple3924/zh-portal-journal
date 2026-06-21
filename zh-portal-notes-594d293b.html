@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>再次回到这里 · 世界杯直播札记</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #f0f2f5;
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            color: #1e1f22;
+            line-height: 1.7;
+            padding: 2rem 1rem;
+        }
+        .page {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* hero 区 */
+        .hero {
+            text-align: center;
+            padding: 3rem 1rem 2rem;
+        }
+        .hero h1 {
+            font-size: 2.2rem;
+            font-weight: 500;
+            letter-spacing: -0.02em;
+            color: #1c1d21;
+            margin-bottom: 0.6rem;
+        }
+        .hero .sub {
+            font-size: 1rem;
+            color: #5f6369;
+            border-bottom: 1px solid #d0d3da;
+            display: inline-block;
+            padding-bottom: 0.6rem;
+        }
+
+        /* 卡片通用 */
+        .card {
+            background: #ffffff;
+            border-radius: 18px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04), 0 0 0 1px rgba(0,0,0,0.02);
+            padding: 2rem 2rem 2.2rem;
+            margin-bottom: 2rem;
+            transition: box-shadow 0.2s ease;
+        }
+        .card:hover {
+            box-shadow: 0 4px 16px rgba(0,0,0,0.06), 0 0 0 1px #cdd0d8;
+        }
+
+        /* 正文排版 */
+        .card h2 {
+            font-size: 1.4rem;
+            font-weight: 500;
+            margin-bottom: 1.2rem;
+            color: #222;
+            border-left: 4px solid #8a929f;
+            padding-left: 1rem;
+        }
+        .card p {
+            margin-bottom: 1.2rem;
+            font-size: 1rem;
+            color: #2c2e33;
+        }
+        .card p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* 引用提示 */
+        .insight {
+            background: #f4f6fa;
+            border-left: 5px solid #7a828f;
+            padding: 1.2rem 1.6rem;
+            border-radius: 12px;
+            font-style: normal;
+            margin: 1.8rem 0 1rem;
+            color: #2d313a;
+            box-shadow: inset 0 1px 3px rgba(0,0,0,0.02);
+        }
+        .insight strong {
+            font-weight: 500;
+            color: #1d2128;
+        }
+
+        /* 链接样式 */
+        a {
+            color: #1e3c6b;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.15s;
+        }
+        a:hover {
+            border-bottom-color: #1e3c6b;
+        }
+
+        /* 收藏提示 */
+        .bookmark-note {
+            background: #ffffff;
+            border-radius: 18px;
+            padding: 1.6rem 2rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04), 0 0 0 1px rgba(0,0,0,0.02);
+            margin-bottom: 2rem;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: baseline;
+            gap: 0.3rem 0.6rem;
+        }
+        .bookmark-note .label {
+            font-weight: 500;
+            color: #2c3a4f;
+            letter-spacing: 0.01em;
+        }
+
+        /* 场景列表 */
+        .scene-list {
+            list-style: none;
+            padding: 0;
+            margin: 1.2rem 0 0.2rem;
+        }
+        .scene-list li {
+            position: relative;
+            padding-left: 1.8rem;
+            margin-bottom: 1rem;
+            font-size: 1rem;
+            color: #2b2e36;
+        }
+        .scene-list li::before {
+            content: "·";
+            position: absolute;
+            left: 0.5rem;
+            font-weight: 600;
+            color: #6d7685;
+        }
+
+        /* FAQ 摘要 */
+        .faq-mini {
+            margin-top: 2rem;
+        }
+        .faq-item {
+            padding: 1rem 0;
+            border-bottom: 1px solid #e1e4eb;
+        }
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+        .faq-item .q {
+            font-weight: 500;
+            color: #1b1e26;
+            margin-bottom: 0.2rem;
+        }
+        .faq-item .a {
+            color: #3e434d;
+            font-size: 0.95rem;
+        }
+
+        /* 响应式 */
+        @media (max-width: 640px) {
+            body {
+                padding: 1rem 0.8rem;
+            }
+            .card {
+                padding: 1.6rem 1.2rem;
+            }
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            .bookmark-note {
+                padding: 1.2rem 1.4rem;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 1.6rem;
+            }
+            .card h2 {
+                font-size: 1.25rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="page">
+
+    <!-- hero -->
+    <div class="hero">
+        <h1>再次回到这里</h1>
+        <div class="sub">记一段持续关注的观看旅程</div>
+    </div>
+
+    <!-- 第一张卡片：从收藏与再次访问说起 -->
+    <div class="card">
+        <h2>收藏夹里的那个名字</h2>
+        <p>浏览器书签栏里，有一些地址是反复点开的。它们不一定是最花哨的，但总是在比赛日被记起。对我来说，<a href="https://zh-portal-worldcup.com">世界杯直播</a>就是其中之一。谈不上第一次是什么时候存下的，只记得后来每次打开，界面还是那个素净的样子，没有弹窗干扰，也不急着催你做什么。</p>
+        <p>页面加载的速度一直很稳定，这点在赛前几分钟尤其重要。我不需要再翻看社交网络里哪个链接还能用，也不需要临时去搜索。只要点开书签，等一两秒，画面就出来了。这种「确定性」在直播场景里，比什么都珍贵。</p>
+        <div class="insight">
+            <strong>一点体会：</strong> 真正的好服务，往往不靠大张旗鼓的提醒，而是让你在需要的时候，发现它还在那里。
+        </div>
+    </div>
+
+    <!-- 第二张卡片：持续关注的理由 -->
+    <div class="card">
+        <h2>为什么愿意一直留着它</h2>
+        <p>视频直播这件事，分辨率、延迟、稳定性，每一项都是硬指标。而在这个网站里，很少遇到中间突然卡住、然后必须刷新重连的局面。大部分时候，比赛进行到后半段，画面依然流畅，解说和现场声也没有明显不同步。</p>
+        <p>另一个细节是，它不刻意制造「紧迫感」。没有倒计时弹窗催促你注册，也没有「仅剩三分钟免费观看」这类说法。你只需要在比赛时间打开，找到对应的场次，然后安静地看。这种克制，反而让人更愿意记住它。</p>
+        <p>所以每次大赛前，我都会下意识地先点开那个书签，确认一下赛程列表是否已经更新。然后关掉，等开赛前再回来。它像一个不起眼但可靠的入口，不需要多说什么。</p>
+
+        <!-- 场景简写 -->
+        <ul class="scene-list">
+            <li>小组赛阶段，同时关注两场比赛时，可以快速切换标签页</li>
+            <li>深夜场次，打开后把声音调小，只留画面，不打扰家人</li>
+            <li>出差在外，用手机浏览器打开，依然能保持基本观感</li>
+        </ul>
+    </div>
+
+    <!-- 第三张卡片：访问句 + 收藏提示（自然嵌入） -->
+    <div class="bookmark-note">
+        <span class="label">📌 访问句 · </span>
+        <span>如果你也在寻找一个可以反复回来、不用每次重新适应的观看方式，不妨试试把</span>
+        <a href="https://zh-portal-worldcup.com">世界杯直播</a>
+        <span>放进收藏夹。下一次比赛日，你就能直接点开，不用再临时找路。</span>
+    </div>
+
+    <!-- FAQ 摘要卡片，克制提问 -->
+    <div class="card">
+        <h2>几个常被问起的事</h2>
+        <div class="faq-mini">
+            <div class="faq-item">
+                <div class="q">是否支持移动端直接观看？</div>
+                <div class="a">浏览器打开即可，不需要额外应用。竖屏或横屏都可以正常显示，不过横屏时视角更接近电视。</div>
+            </div>
+            <div class="faq-item">
+                <div class="q">直播源会临时更换吗？</div>
+                <div class="a">大多数情况下，同一场比赛的链接在整个赛程内都是固定的。偶尔遇到源维护，页面会给出替代选项，不需要自己去找。</div>
+            </div>
+            <div class="faq-item">
+                <div class="q">有没有赛程提醒或推送？</div>
+                <div class="a">目前没有主动推送。习惯上是自己记下比赛时间，提前几分钟打开即可。网站首页会列出最近几场的开球时间。</div>
+            </div>
+        </div>
+        <p style="margin-top:1.4rem; font-size:0.95rem; color:#5c606b;">以上是基于个人使用经验的整理，具体功能以实际页面为准。</p>
+    </div>
+
+    <!-- 结束句 -->
+    <div style="text-align:center; padding:1.2rem 0 2.5rem; color:#6b707c; font-size:0.9rem; border-top:1px solid #d9dce3; margin-top:0.5rem;">
+        <span>下一次比赛日，书签里见。</span>
+    </div>
+
+</div>
+</body>
+</html>
